@@ -1,0 +1,13 @@
+<!doctype html>
+<head><meta charset="utf-8"></head>
+<body><canvas id="canvas" width="1024" height="1024"></canvas></body>
+<script type="text/javascript" src="md_customobject.js"></script>
+<script>
+    /* test for running new customobject module */
+    com = new CustomObjectManager(document.getElementById("canvas"));
+    var player = new CustomObject("bishop",100,200,0,320,240,0,0,"res/images/bishop.png",false);
+    com.addObject(player);
+    //com.startLoadScreen();
+    com.requestPaint();
+    com.run();
+</script>

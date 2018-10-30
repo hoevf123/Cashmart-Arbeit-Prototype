@@ -1,0 +1,83 @@
+{
+    "mapId":100000,
+    "mapName":"캐시마트 아르바이트",
+    "defaultEncodingType":"utf-8",
+    "defaultLocale":"ko-kr",
+    "objects":[
+        {
+            "objectName":"cube_bottom",
+            "name":"바닥 큐브",
+            "width":1,
+            "height":1,
+            "depth":1,
+            "position":[
+                [1,1,1],[1,1,2],[1,1,3]
+            ],
+            "imgSrc":"",
+            "description":"흔한 바닥이다",
+            "availTradeAmount":3
+        }
+        ,
+        {
+            "objectName" : "cube_ivory_wall",
+            "name":"아이보리 벽 큐브",
+            "width":1,
+            "height":1,
+            "depth":1,
+            "position":[
+                [1,2,1],[1,2,2],[1,2,3]
+            ],
+            "imgSrc":"",
+            "availAccountMoveAmount":2
+        }
+        ,
+        {
+            "objectName" : "actpick_cashmart_package_box",
+            "name":"캐시마트 포장 박스",
+            "width":1,
+            "height":1,
+            "depth":1,
+            "position":[
+                [2,2,2],{
+                    "Width":5,
+                    "Height":2,
+                    "Length":1,
+                    "pad-x" :0,
+                    "pad-y" :0,
+                    "pad-z" :0
+                }
+            ],
+            "imgSrc":"",
+            "availAccountMoveAmount":0,
+            "isActionAvailable":true,
+            "ActionStatus":"놓여있음"
+        }
+        ,
+        {
+            "objectName" : "object_tulip_base",
+            "name":"튤립 박스",
+            "width":1,
+            "height":1,
+            "depth":1,
+            "position":[
+                [3,3,3]
+            ]
+        }
+        ,
+        {
+            "objectName" : "trigger_cashmart_accomplish_product_sending",
+            "name" : "캐시마트 물건 전달 트리거",
+            "position":[null],
+            "description":"이곳에 캐시마트 포장 박스를 두면 물건 전달이 성공된다는 소문이 있다. \n못 믿겠다면 직접 해보자."
+        }
+        ,
+        {
+            "objectName":"cube_portal",
+            "name":"인하우스 매직 포털(BETA)",
+            "position":[[2,2,2,{"destMapID":10200}],
+                        [10,2,2,{"destMapID":10200}]
+                        ],
+            "description":"골두스 회사에서 블루 라펜타를 연구하여 만들어 낸 테스트용 포털이다. 아직 이 포털은 불안정하여 이동 장소가 바뀌어 버릴수도 있으므로 주의."
+        }
+    ]   
+}
